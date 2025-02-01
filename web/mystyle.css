@@ -1,0 +1,38 @@
+/* styles.css */
+
+/* Reset some default styles for cross-browser compatibility */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Style for the body to ensure it takes full height */
+html, body {
+    height: 100%;
+}
+
+/* The container that holds your content */
+.container {
+    border: 5px solid #000; /* You can change the color and width of the border here */
+    height: 100%; /* Make the container take up the full height */
+    display: flex;
+    align-items: center; /* Center align vertically */
+    justify-content: center; /* Center align horizontally */
+    padding: 20px; /* Adjust padding as needed */
+}
+
+/* Ensure responsiveness */
+@media (max-width: 600px) {
+    .container {
+        border-width: 3px; /* Thinner border for smaller screens */
+        padding: 10px; /* Adjust padding for smaller screens */
+    }
+}
+
+@media (min-width: 1200px) {
+    .container {
+        border-width: 10px; /* Thicker border for larger screens */
+        padding: 40px; /* Adjust padding for larger screens */
+    }
+}
